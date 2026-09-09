@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    @@include('components/layout/head.html')
+</head>
+
+<body>
+    @@include('components/layout/header.html')
+    @@include('components/layout/menu.html')
+    @@include('components/layout/breadcrumb.html')
+    <div class="layout">
+        <div class="container">
+            <div class="layout-content">
+                <div class="careers-view">
+                    <div class="careers-view-content">
+                        <h5>Assistant Professor of Finance</h5>
+                        <div class="careers-view-content-link">
+                            <p class="body3 slate700">Employment: <i class="i-view"></i>Full time</p>
+                            <p class="body3 slate700">Employment: <i class="i-view"></i>Full time</p>
+                        </div>
+                        <div class="careers-view-content-line"></div>
+                        <div class="careers-view-content-title">
+                            <b class="subtitle8 slate900">About the Position</b>
+                            <p class="body3 slate600">Join our dynamic faculty to inspire and mentor the next generation
+                                of financial leaders.
+                                As an Assistant Professor of Finance, you will contribute to the academic environment
+                                and support students in developing their knowledge and skills in finance.</p>
+                        </div>
+                        <div class="careers-view-content-line"></div>
+                        <div class="careers-view-content-subtitle">
+                            <b class="subtitle8 slate900">What You Will Do</b>
+                            <div class="body3 slate600">
+                                <p><span></span>Contribute to the academic environment.</p>
+                                <p><span></span>Support and mentor students.</p>
+                                <p><span></span>Inspire the next generation of financial leaders.</p>
+                                <p><span></span>Contribute to students’ development in finance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="careers-view-contact">
+                        <h5 class="subtitle3 slate900">Apply for This Position</h5>
+
+                        <form class="careers-view-contact-form">
+                            <div class="careers-view-contact-form-col">
+                                <label for="fullName">
+                                    <span class="body8 slate600">Full name</span>
+                                    <input type="text" placeholder="Full name">
+                                </label>
+                                <label for="fullName">
+                                    <span class="body8 slate600">Full name</span>
+                                    <input type="text" placeholder="Full name">
+                                </label>
+                                <label for="fullName">
+                                    <span class="body8 slate600">Full name</span>
+                                    <input type="text" placeholder="Full name">
+                                </label>
+                            </div>
+
+                            <div class="careers-view-contact-form-item">
+                                <label>
+                                    <span>Motivation letter</span>
+                                    <textarea id="motivation" placeholder="Motivation letter"></textarea>
+                                </label>
+                                <label>
+                                    <span>Upload CV</span>
+
+                                    <div class="careers-view-contact-form-item-upload">
+                                        <input type="file" id="cv" accept=".pdf">
+
+                                        <img src="@/images/pdf-icon.svg" alt="PDF">
+                                        <span>Upload PDF</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </form>
+
+                        <div class="button">
+                            <p>Send</p>
+                            <i class="i-telegram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layout-sidebar">
+                @@include('components/layout/sidebar.html')
+            </div>
+
+        </div>
+    </div>
+
+
+    @@include('components/layout/footer.html')
+
+</body>
+
+</html>

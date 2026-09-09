@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Proend">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="./images/favicon.svg" type="image/svg">
+<link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+<link rel="stylesheet" href="./assets/icomoon/style.css">
+<link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="./assets/libs/aos/aos.css">
+<link rel="stylesheet" href="./assets/libs/flatpickr/flatpickr.css">
+<link rel="stylesheet" href="./assets/libs/owl-carousel/owl-carousel.css">
+<link rel="stylesheet" href="./assets/libs/owl-carousel/owl-theme.css">
+<link rel="stylesheet" href="./css/main.min.css">
+<title>TITLE</title>
+</head>
+
+<body>
+    <header class="header index" data-aos="fade-down">
+    <div class="container header-container">
+        <div class="button header-button">
+            <i class="i-menu"></i>
+        </div>
+        <div class="vl"></div>
+
+        <div class="header-menu">
+            <div class="header-menu-item header-menu-item--dropdown">
+                <a class="header-menu-link">
+                    <span class="body7">About Us</span>
+                    <i class="i-dropdown"></i>
+                </a>
+                <div class="header-menu-submenu">
+                    <div class="header-menu-submenu-item">
+                        <a href="about.html" class="header-menu-submenu-link body3">
+                            Mision & Vision
+                        </a>
+                    </div>
+                    <div class="header-menu-submenu-item">
+                        <a href="news.html" class="header-menu-submenu-link body3">
+                            News2
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu-item header-menu-item--dropdown">
+                <a class="header-menu-link">
+                    <span class="body7">Programs</span>
+                    <i class="i-dropdown"></i>
+                </a>
+                <div class="header-menu-submenu">
+                    <div class="header-menu-submenu-item">
+                        <a href="./foundation.html" class="header-menu-submenu-link body3">
+                            Foundation
+                        </a>
+                    </div>
+                    <div class="header-menu-submenu-item">
+                        <a href="news.html" class="header-menu-submenu-link body3">
+                            Undergraduate
+                        </a>
+                    </div>
+                    <div class="header-menu-submenu-item">
+                        <a href="news.html" class="header-menu-submenu-link body3">
+                            MAB
+                        </a>
+                    </div>
+                    <div class="header-menu-submenu-item">
+                        <a href="news.html" class="header-menu-submenu-link body3">
+                            Executive
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu-item header-menu-item--dropdown">
+                <a class="header-menu-link">
+                    <span class="body7">Admissions</span>
+                    <i class="i-dropdown"></i>
+                </a>
+                <div class="header-menu-submenu">
+                    <div class="header-menu-submenu-item">
+                        <a href="./admission.html" class="header-menu-submenu-link body3">
+                            Admissions
+                        </a>
+                    </div>
+                    <div class="header-menu-submenu-item">
+                        <a href="./tuition.html" class="header-menu-submenu-link body3">
+                            Tuition fees
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <a href="/" class="header-logo" aria-label="Home">
+            <img src="./images/logo.svg" alt="Logo" class="header-logo-img" />
+        </a>
+        <div class="divider"></div>
+        <div class="header-menu">
+            <div class="header-menu-item header-menu-item--dropdown">
+                <a class="header-menu-link">
+                    <span class="body7">Faculties</span>
+                    <i class="i-dropdown"></i>
+                </a>
+                <div class="header-menu-submenu">
+                    <div class="header-menu-submenu-item">
+                        <a href="news.html" class="header-menu-submenu-link body3">
+                            News1
+                        </a>
+                    </div>
+                    <div class="header-menu-submenu-item">
+                        <a href="news.html" class="header-menu-submenu-link body3">
+                            News2
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu-item header-menu-item--dropdown">
+                <a class="header-menu-link">
+                    <span class="body7">News & Events</span>
+                    <i class="i-dropdown"></i>
+                </a>
+                <div class="header-menu-submenu">
+                    <div class="header-menu-submenu-item">
+                        <a href="news.html" class="header-menu-submenu-link body3">
+                            News1
+                        </a>
+                    </div>
+                    <div class="header-menu-submenu-item">
+                        <a href="news.html" class="header-menu-submenu-link body3">
+                            News2
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu-item ">
+                <a href="contacts.html" class="header-menu-link body3">
+                    Contact us
+                </a>
+            </div>
+        </div>
+        <div class="vl"></div>
+        <div class="button header-button">
+            <i class="i-search"></i>
+        </div>
+    </div>
+</header>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menyu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="menu">
+            <li class="menu-item menu-item--dropdown">
+                <span class="menu-link" data-bs-toggle="collapse" data-bs-target="#submenu1" aria-expanded="false" aria-controls="submenu1">
+                    O Bien
+                    <i class="i-dropdown"></i>
+                </span>
+                <ul class="submenu collapse" id="submenu1">
+                    <li class="submenu-item">
+                        <a href="about.html" class="submenu-link">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="results.html" class="submenu-link">
+                            Результаты
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="team.html" class="submenu-link">
+                            Эксперты Bien
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="news.html" class="submenu-link">
+                            Новости
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item--dropdown">
+                <span class="menu-link" data-bs-toggle="collapse" data-bs-target="#submenu2" aria-expanded="false" aria-controls="submenu2">
+                    Услуги
+                    <i class="i-dropdown"></i>
+                </span>
+                <ul class="submenu collapse" id="submenu2">
+                    <li class="submenu-item">
+                        <a href="service-1.html" class="submenu-link">
+                            Поступление в вузы США
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="service-2.html" class="submenu-link">
+                            Поступление на магистратуру и аспирантуру
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item--dropdown">
+                <span class="menu-link" data-bs-toggle="collapse" data-bs-target="#submenu3" aria-expanded="false" aria-controls="submenu3">
+                    Полезные материалы
+                    <i class="i-dropdown"></i>
+                </span>
+                <ul class="submenu collapse" id="submenu3">
+                    <li class="submenu-item">
+                        <a href="materials.html" class="submenu-link">
+                            Материалы
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="exam.html" class="submenu-link">
+                            Пробный SAT
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="events.html" class="menu-link">
+                    Вебинары и мероприятия
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+    <div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs-wrapper">
+            <p class="subtitle1 text-white mb-2">Title</p>
+            <div class="d-flex align-items-center gap-1">
+                <a href="/" class="text-white">
+                    <i class="i-home" style="font-size: 22px;"></i>
+                </a>
+                <i class="i-next" style="font-size: 16px;"></i>
+                <a href="/" class="body3 text-light">
+                    About University
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumbs-img">
+        <img src="./images/breadcrumb-bg.png" alt="">
+    </div>
+</div>
+    <div class="layout">
+        <div class="container">
+            <div class="layout-content">
+                <div class="foundation">
+                    <div class="foundation-content">
+                        <div class="foundation-content-title">
+                            <h5 class="subtitle2 slate900">Who is this programme for?</h5>
+                            <p class="body3 slate600">
+                            <blockquote>TEAM Pre-Foundation Course is a programme for those who wish to develop skills
+                                necessary for undergraduate studies at TEAM University.</blockquote>
+                            The course mainly focuses on the development of students’ English skills and key
+                            transferrable skills such as critical thinking, group work and presentation skills. The
+                            course is subject to TEAM University quality assurance procedures. Students who will
+                            successfully complete the course will be automatically admitted to TEAM University
+                            undergraduate programme.
+                            </p>
+                        </div>
+                        <div class="foundation-content-link">
+                            <div class="button">Apply now <i class="i-arrow"></i></div>
+                            <div class="foundation-content-link-item">
+                                <img src="./images/foundation-img-1.svg" alt="">
+                                <p class="body3 blue900">Accredited and officially recognised programme.</p>
+                            </div>
+                        </div>
+                        <div class="about-section-carousel owl-carousel owl-theme">
+                            <div class="about-section-carousel-item">
+                                <img src="./images/about-section-bg.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="about-page-content-wrapper">
+                            <div class="about-page-content-wrapper-card">
+                                <div class="about-page-content-wrapper-card-image">
+                                    <img src="./images/about-page-2.svg" alt="">
+                                </div>
+                                <div class="about-page-content-wrapper-card-content">
+                                    <p class="body8 slate600">Duration</p>
+                                    <h5 class="subtitle1 blue900">6 Months</h5>
+                                </div>
+                            </div>
+                            <div class="about-page-content-wrapper-line"></div>
+                            <div class="about-page-content-wrapper-card">
+                                <div class="about-page-content-wrapper-card-image">
+                                    <img src="./images/about-page-3.svg" alt="">
+                                </div>
+                                <div class="about-page-content-wrapper-card-content">
+                                    <p class="body8 slate600">Start date</p>
+                                    <h5 class="subtitle1 blue900">February 2026</h5>
+                                </div>
+                            </div>
+                            <div class="about-page-content-wrapper-line"></div>
+                            <div class="about-page-content-wrapper-card">
+                                <div class="about-page-content-wrapper-card-image">
+                                    <img src="./images/about-page-4.svg" alt="">
+                                </div>
+                                <div class="about-page-content-wrapper-card-content">
+                                    <p class="body8 slate600">Age range </p>
+                                    <h5 class="subtitle1 blue900">16+</h5>
+                                </div>
+                            </div>
+                            <div class="about-page-content-wrapper-line"></div>
+                            <div class="about-page-content-wrapper-card">
+                                <div class="about-page-content-wrapper-card-image">
+                                    <img src="./images/about-page-5.svg" alt="">
+                                </div>
+                                <div class="about-page-content-wrapper-card-content">
+                                    <p class="body8 slate600">Price</p>
+                                    <h5 class="subtitle1 blue900">5 400 000 UZS</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="foundation-info">
+                        <div class="foundation-info-title">
+                            <h5 class="subtitle2 slate900">Why team pre-foundation?</h5>
+                            <p class="body8 slate600">Our values shape the way we learn, work and grow together.</p>
+                        </div>
+                        <div class="foundation-info-wrapper">
+                            <div class="foundation-info-wrapper-item">
+                                <h5 class="subtitle4 slate700">01</h5>
+                                <div class="foundation-info-wrapper-item-image">
+                                    <img src="./images/foundation-img-2.svg" alt="">
+                                </div>
+                                <h5 class="subtitle6 slate800">University Preparation</h5>
+                                <p class="body3 slate600">Prepare for university life and academic study.</p>
+                            </div>
+                            <div class="foundation-info-wrapper-item">
+                                <h5 class="subtitle4 slate700">02</h5>
+                                <div class="foundation-info-wrapper-item-image">
+                                    <img src="./images/foundation-img-2.svg" alt="">
+                                </div>
+                                <h5 class="subtitle6 slate800">Academic English</h5>
+                                <p class="body3 slate600">Improve your reading, writing, speaking and listening skills.
+                                </p>
+                            </div>
+                            <div class="foundation-info-wrapper-item">
+                                <h5 class="subtitle4 slate700">03</h5>
+                                <div class="foundation-info-wrapper-item-image">
+                                    <img src="./images/foundation-img-2.svg" alt="">
+                                </div>
+                                <h5 class="subtitle6 slate800">Study Skills</h5>
+                                <p class="body3 slate600">Develop critical thinking, research and academic writing
+                                    skills.</p>
+                            </div>
+                            <div class="foundation-info-wrapper-item">
+                                <h5 class="subtitle4 slate700">04</h5>
+                                <div class="foundation-info-wrapper-item-image">
+                                    <img src="./images/foundation-img-2.svg" alt="">
+                                </div>
+                                <h5 class="subtitle6 slate800">Pathway to Undergraduate Study</h5>
+                                <p class="body3 slate600">Successfully complete the course and progress to TEAM
+                                    University undergraduate programmes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="foundation-subtitle">
+                        <h5 class="subtitle2 slate900">Entry requirements</h5>
+                        <div class="foundation-subtitle-text body3">
+                            <p><span></span>Completed 9 years of secondary education or equivalent</p>
+                            <p><span></span>Grade 11 or Year 2 Lyceum student</p>
+                            <p><span></span>Internal interview and assessment</p>
+                            <p><span></span>English language level — B1 or equivalent</p>
+                            <p><span></span>Age requirement: 16+</p>
+                            <p><span></span>Required documents — education certificate, school confirmation letter,
+                                birth certificate</p>
+                        </div>
+                    </div>
+
+                    <div class="foundation-exam">
+                        <div>
+                            <h5 class="subtitle2 slate900">Entrance exam</h5>
+                            <p class="slate600 body8">The English language entrance exam to Pre-Foundation Course will
+                                consist of <span class="body7 red700">3
+                                    sections</span> that altogether will take around <span class="body7 red700">1 hour
+                                    40 minutes.</span></p>
+                        </div>
+
+                        <div class="foundation-exam-wrapper">
+                            <div class="foundation-exam-wrapper-card">
+                                <div class="foundation-exam-wrapper-card-title">
+                                    <div class="foundation-exam-wrapper-card-title-image">
+                                        <img src="./images/foundation-img-3.svg" alt="">
+                                    </div>
+                                    <h2 class="headline1">1</h2>
+                                </div>
+                                <div class="foundation-exam-wrapper-card-text">
+                                    <h5 class="subtitle5 slate900">Writing section</h5>
+                                    <p class="body3 slate600 line-clamp-3 no-toltip">40 minutes · One writing task.
+                                        Demonstrate your ability to express and organise
+                                        ideas clearly in written English.</p>
+                                </div>
+                            </div>
+                            <div class="foundation-exam-wrapper-card">
+                                <div class="foundation-exam-wrapper-card-title">
+                                    <div class="foundation-exam-wrapper-card-title-image">
+                                        <img src="./images/foundation-img-3.svg" alt="">
+                                    </div>
+                                    <h2 class="headline1">2</h2>
+                                </div>
+                                <div class="foundation-exam-wrapper-card-text">
+                                    <h5 class="subtitle5 slate900">Reading section</h5>
+                                    <p class="body3 slate600 line-clamp-3 no-toltip">30 minutes · Reading texts with
+                                        matching, short-answer and note-completion questions</p>
+                                </div>
+                            </div>
+                            <div class="foundation-exam-wrapper-card">
+                                <div class="foundation-exam-wrapper-card-title">
+                                    <div class="foundation-exam-wrapper-card-title-image">
+                                        <img src="./images/foundation-img-3.svg" alt="">
+                                    </div>
+                                    <h2 class="headline1">3</h2>
+                                </div>
+                                <div class="foundation-exam-wrapper-card-text">
+                                    <h5 class="subtitle5 slate900">Use of English</h5>
+                                    <p class="body3 slate600 line-clamp-3 no-toltip">20 questions · 30 minutes. Test
+                                        your understanding and practical use of English through 20 questions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="foundation-main">
+                        <div class="foundation-main-title">
+                            <h5 class="subtitle2">Start your journey at <span class="red700">Team</span></h5>
+                            <p class="body3 slate600">Join TEAM University and begin your journey in a modern learning
+                                environment designed to
+                                develop your knowledge, skills and entrepreneurial mindset.</p>
+                        </div>
+                        <div class="button">
+                            <p>Apply now</p>
+                            <i class="i-arrow"></i>
+                        </div>
+                    </div>
+
+                    <div class="foundation-subtitle">
+                        <h5 class="subtitle2 slate900">Course learning outcomes</h5>
+                        <p class="body3 slate600">Upon successful completion of this module students should be able to:
+                        </p>
+                        <div class="foundation-subtitle-text body3">
+                            <p><span></span>Explain and support their viewpoint by providing evidence, giving reasons
+                                and evaluating different opinions both in written and oral forms.</p>
+                            <p><span></span>Demonstrate an ability to communicate their message with a high level of
+                                lexical and grammatical accuracy and spontaneity on a number of familiar topics.</p>
+                            <p><span></span>Produce and present their work in different formats with a high degree of
+                                clarity and detail.</p>
+                            <p><span></span>Identify main ideas and details when reading and listening to complex input.
+                            </p>
+                            <p><span></span>Demonstrate an ability to work in collaboration.</p>
+                        </div>
+                    </div>
+
+                    <div class="foundation-faq">
+                        <div class="foundation-faq-title">
+                            <h5 class="subtitle2">What modules will i study?</h5>
+                            <p class="body3 slate600">Foundation course consists of five compulsory modules</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="question">
+                                <p class="subtitle8"><span class="red700">1.</span> Academic and Business Communication
+                                    Skills <span class="slate600">(Year-long)</span></p>
+                                <i class="i-dropdown"></i>
+                            </div>
+                            <div class="answer">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam minima quo sit,
+                                beatae ipsum totam debitis magni dolorum sapiente voluptas nobis aspernatur! Illo saepe
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="question">
+                                <p class="subtitle8"><span class="red700">2.</span> Contemporary Global Issues <span
+                                        class="slate600">(Year-long)</span></p>
+                                <i class="i-dropdown"></i>
+                            </div>
+                            <div class="answer">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam minima quo sit,
+                                beatae ipsum totam debitis magni dolorum sapiente voluptas nobis aspernatur! Illo saepe
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="question">
+                                <p class="subtitle8"><span class="red700">3.</span> Economics and Math for Modern World
+                                    <span class="slate600">(Year-long)</span>
+                                </p>
+                                <i class="i-dropdown"></i>
+                            </div>
+                            <div class="answer">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam minima quo sit,
+                                Fugit illum quidem non laudantium repellendus eos laboriosam dolorum obcaecati.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="question">
+                                <p class="subtitle8"><span class="red700">4.</span> Introduction to Organisation,
+                                    Enterprise and Management <span class="slate600">(Year-long)</span></p>
+                                <i class="i-dropdown"></i>
+                            </div>
+                            <div class="answer">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam minima quo sit,
+                                asperiores tempore mollitia eaque sequi quam.
+                                Fugit illum quidem non laudantium repellendus eos laboriosam dolorum obcaecati.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="question">
+                                <p class="subtitle8"><span class="red700">5.</span> Digital Basics <span
+                                        class="slate600">(Year-long)</span></p>
+                                <i class="i-dropdown"></i>
+                            </div>
+                            <div class="answer">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam minima quo sit,
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="foundation-course">
+                        <img src="./images/foundation-img-5.png" alt="">
+
+                        <div class="foundation-course-content">
+                            <h4 class="subtitle2 slate900">How will I be taught and assessed?</h4>
+
+                            <p class="body3 slate700">
+                                The language of instruction for the course is English. Your classes will be delivered in
+                                the format of seminars, workshops, tours, group discussions and virtual learning
+                                activities. Your lecturers will engage you in problem-solving tasks, assign activities
+                                for group work, involve you in games to improve your digital literacy skills and create
+                                opportunities for improvement of your presentation and public speaking skills. When it
+                                comes to assessment, we use a broad range of tasks such as portfolios, presentations,
+                                reports, in-class tests, and projects. In your second term of studies, you will be
+                                working on one big project that will require you to consolidate and use all the
+                                knowledge and skills from all the modules you studied on IFC. To accomplish this task,
+                                you will be asked to work in groups with a mentor being assigned to your group. The
+                                mentor will be a person from industry who will guide and facilitate your learning
+                                together with your lecturer. We believe that such tasks will help you build the
+                                connections between all the modules that you will study.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layout-sidebar">
+                <div class="sidebar">
+    <div class="sidebar__menu">
+
+        <h3 class="sidebar__title subtitle8">
+            About Us
+        </h3>
+
+        <ul class="sidebar__list">
+
+            <li class="sidebar__list--item active">
+                <a href="#" class="sidebar__link body2 slate700">
+                    Mission & Vision
+                </a>
+            </li>
+
+            <li class="sidebar__list--item">
+                <a href="#" class="sidebar__link body3 slate700">
+                    Research
+                </a>
+            </li>
+
+            <li class="sidebar__list--item has-dropdown">
+                <a href="#" class="sidebar__button body3 slate700">
+                    Leadership
+                    <i class="i-dropdown sidebar__icon"></i>
+                </a>
+
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__dropdown--item">
+                        <a href="./leadership.html" class="sidebar__dropdown--link body3 slate700">
+                            Founders
+                        </a>
+                    </li>
+
+                    <li class="sidebar__dropdown--item">
+                        <a href="#" class="sidebar__dropdown--link body3 slate700">
+                            Subpage 2
+                        </a>
+                    </li>
+
+                    <li class="sidebar__dropdown--item">
+                        <a href="#" class="sidebar__dropdown--link body3 slate700">
+                            Subpage 3
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="sidebar__list--item">
+                <a href="#" class="sidebar__link body3 slate700">
+                    Academic staff
+                </a>
+            </li>
+
+            <li class="sidebar__list--item has-dropdown">
+                <a href="#" class="sidebar__button body3 slate700">
+                    Partnerships
+                    <i class="i-dropdown sidebar__icon"></i>
+                </a>
+
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__dropdown--item">
+                        <a href="./network.html" class="sidebar__dropdown--link body3 slate700">
+                            Inernational partners
+                        </a>
+                    </li>
+
+                    <li class="sidebar__dropdown--item">
+                        <a href="#" class="sidebar__dropdown--link body3 slate700">
+                            Subpage 2
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="sidebar__list--item has-dropdown">
+                <a href="#" class="sidebar__button body3 slate700">
+                    Careers
+                    <i class="i-dropdown sidebar__icon"></i>
+                </a>
+
+                <ul class="sidebar__dropdown">
+                    <li class="sidebar__dropdown--item">
+                        <a href="./careers.html" class="sidebar__dropdown--link body3 slate700">
+                            Job vacancies
+                        </a>
+                    </li>
+
+                    <li class="sidebar__dropdown--item">
+                        <a href="#" class="sidebar__dropdown--link body3 slate700">
+                            Subpage 2
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const dropdownItems = document.querySelectorAll(
+            '.sidebar__list--item.has-dropdown'
+        );
+
+        dropdownItems.forEach(item => {
+            const button = item.querySelector('.sidebar__button');
+
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const isOpen = item.classList.contains('open');
+
+                dropdownItems.forEach(otherItem => {
+                    otherItem.classList.remove('open');
+                });
+
+                if (!isOpen) {
+                    item.classList.add('open');
+                }
+            });
+        });
+    });
+</script>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+    <div class="container">
+        <!-- <div class="footer-banner">
+            <div class="footer-banner-text">
+                <div class="section-top start m-0">
+                    <p class="body6 blue900">OUR PARTNERS</p>
+                    <h4><span>Strong</span> partnerships. <br> Greater <span>possibilities</span>.</h4>
+                    <p class="body3 slate600">Our partners help bridge the gap between education and industry, giving
+                        our students and
+                        professionals.</p>
+                </div>
+                <div class="button">
+                    <p>Explore our partners</p>
+                    <i class="i-link"></i>
+                </div>
+            </div>
+            <div class="footer-banner-line"></div>
+
+            <div class="footer-banner-crusel owl-carousel">
+                <div class="footer-banner-carousel owl-carousel owl-theme">
+                    <div class="footer-banner-carousel-item">
+                        <img src="./images/about-section-bg.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="footer-top">
+            <div class="footer-top--item">
+                <div class="footer-top--item-logo">
+                    <img src="./images/logo-white.svg" alt="Logo">
+                </div>
+                <div class="footer-top--item-socials">
+                    <a href="#"><i class="i-telegram"></i></a>
+                    <a href="#"><i class="i-instagram"></i></a>
+                    <a href="#"><i class="i-facebook"></i></a>
+                    <a href="#"><i class="i-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-top--item">
+                <h5 class="subtitle4 gray100 mb-3">Admissions</h5>
+                <a class="body3 gray300 mb-2" href="#">Application Process</a>
+                <a class="body3 gray300 mb-2" href="#">Tuition Fees and Discount Options</a>
+                <a class="body3 gray300 mb-2" href="#">International Students Visa, Travel and Accommodation</a>
+                <a class="body3 gray300 mb-2" href="#">Policies and Procedures</a>
+                <a class="body3 gray300 mb-2" href="#">Scholarships</a>
+            </div>
+
+            <div class="footer-top--item">
+                <h5 class="subtitle4 gray100 mb-3">About</h5>
+                <a class="body3 gray300 mb-2" href="#">Vision, Mission and Values</a>
+                <a class="body3 gray300 mb-2" href="#">Research</a>
+                <a class="body3 gray300 mb-2" href="#">Legal Framework</a>
+                <a class="body3 gray300 mb-2" href="#">Why TEAM?</a>
+                <a class="body3 gray300 mb-2" href="#">Our People</a>
+                <a class="body3 gray300 mb-2" href="#">LSBU Partnership</a>
+                <a class="body3 gray300 mb-2" href="#">Media About Us</a>
+            </div>
+
+            <div class="footer-top--item">
+                <h5 class="subtitle4 gray100 mb-3">Quick Links</h5>
+                <a class="body3 gray300 mb-2" href="#">Programs</a>
+                <a class="body3 gray300 mb-2" href="#">Admissions</a>
+                <a class="body3 gray300 mb-2" href="#">About</a>
+                <a class="body3 gray300 mb-2" href="#">Scholarships</a>
+                <a class="body3 gray300 mb-2" href="#">LSBU Partnership</a>
+            </div>
+
+            <div class="footer-top--item">
+                <h5 class="subtitle4 gray100 mb-3">Contact</h5>
+                <a class="body3 gray300 mb-2" href="#">
+                    <i class="i-location"></i>Tashkent, Temur Malik Street, 146.
+                </a>
+                <a class="body3 gray300 mb-2" href="#">
+                    <i class="i-phone"></i>+998 71 200 20 60
+                </a>
+                <a class="body3 gray300 mb-2" href="#">
+                    <i class="i-email"></i>info@teamuni.uz
+                </a>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-bottom-item body3 ">Copyright © <span id="y"></span>, Team University</p>
+            <script>y.textContent = new Date().getFullYear()</script>
+            <a href="https://proend.ru" target="_blank" class="footer-bottom-item body3">
+                Sayt ishlab chiquvchisi:
+                <img src="./images/proend.svg" width="100" alt="">
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="./assets/libs/aos/aos.js"></script>
+<script src="./assets/libs/bootstrap/bootstrap.js"></script>
+<script src="./assets/libs/flatpickr/flatpickr.js"></script>
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/imask.js"></script>
+<script src="./assets/libs/owl-carousel/owl-carousel.js"></script>
+<script src="./assets/js/main.js"></script>
+<script>
+    $(function () {
+        if ($('.example-carousel').length) {
+            $('.example-carousel').owlCarousel({
+                loop: true,
+                autoplay: true,
+                nav: false,
+                dots: false,
+                center: true,
+                margin: 16,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    360: {
+                        items: 2
+                    }
+                }
+            });
+        }
+
+        if ($('.about-section-carousel').length) {
+            $('.about-section-carousel').owlCarousel({
+                loop: true,
+                autoplay: false,
+                nav: false,
+                dots: false,
+                center: true,
+                margin: 24,
+                autoWidth: true,
+                items: 8
+            });
+        }
+    });
+
+    $(document).ready(function () {
+        const owl = $('.events-carousel');
+
+        owl.owlCarousel({
+            loop: false,
+            margin: 20,
+            nav: false,
+            dots: false,
+            smartSpeed: 600,
+
+            responsive: {
+                0: {
+                    items: 1.2
+                },
+
+                600: {
+                    items: 2.2
+                },
+
+                1000: {
+                    items: 3.2
+                }
+            }
+        });
+
+        $('.custom-next').on('click', function (e) {
+            e.preventDefault();
+
+            owl.trigger('next.owl.carousel');
+        });
+
+        $('.custom-prev').on('click', function (e) {
+            e.preventDefault();
+
+            owl.trigger('prev.owl.carousel');
+        });
+    });
+
+
+
+    const eventsCarousel = $('.carousel-section-wrapper');
+
+    eventsCarousel.owlCarousel({
+        loop: true,
+        margin: 20,
+        dots: false,
+        nav: false,
+        autoplay: false,
+        smartSpeed: 700,
+        fluidSpeed: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+
+            768: {
+                items: 2
+            },
+
+            1200: {
+                items: 3
+            }
+        }
+    });
+
+    $('.carousel-section-icon .i-prev').parent().on('click', function (e) {
+        e.preventDefault();
+
+        eventsCarousel.trigger('prev.owl.carousel', [700]);
+    });
+
+    $('.carousel-section-icon .i-next').parent().on('click', function (e) {
+        e.preventDefault();
+
+        eventsCarousel.trigger('next.owl.carousel', [700]);
+    });
+</script>
+
+</body>
+
+</html>

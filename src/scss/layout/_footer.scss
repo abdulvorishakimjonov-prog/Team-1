@@ -1,0 +1,200 @@
+@use '../config/mixins' as *;
+
+.footer {
+    position: relative;
+    background: linear-gradient(180deg, #1C398E 0%, #162456 100%);
+    margin: 20px;
+    border-radius: 32px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 130px;
+        background: url("../images/footer-bg.svg") no-repeat;
+        background-size: 100%;
+        z-index: 1;
+    }
+
+    &-banner {
+        margin-top: -200px;
+        background: white;
+        border-radius: 32px;
+        padding: 32px 0 32px 32px;
+        display: flex;
+
+        &-text {
+            max-width: 369px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+
+            h4 {
+                margin-bottom: 12px;
+            }
+
+            .section-top {
+                flex-direction: column;
+                align-items: flex-start !important;
+
+                @include devices(md) {
+                    align-items: center !important;
+                    justify-content: center;
+                    margin: 0 0 16px;
+                }
+            }
+
+        }
+
+        &-line {
+            height: 100%;
+            width: 5px;
+            background: var(--slate200);
+        }
+
+        &-carousel {
+            width: calc(100% + 32px);
+            margin: 0 -16px;
+            overflow: hidden;
+
+            .owl-stage {
+                display: flex;
+                width: max-content !important;
+                animation: carousel-marquee 24s linear infinite alternate;
+            }
+
+            .owl-item {
+                width: 160px !important;
+                flex: 0 0 160px;
+            }
+        }
+    }
+
+    &-top {
+        padding: 50px 0;
+        color: white;
+        display: grid;
+        grid-template-columns: 1.75fr 1fr 1fr 1fr 1fr;
+        justify-content: space-between;
+        gap: 16px;
+
+        @include devices(lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include devices(md) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &--item {
+            @include devices(md) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            &:nth-child(2) {
+                @include devices(md) {
+                    display: none;
+                }
+            }
+
+            &-logo {
+                margin-bottom: 32px;
+
+                img {
+                    width: 100%;
+                    height: 60px;
+                    object-fit: contain;
+                    object-position: left;
+                }
+            }
+
+            &-socials {
+                display: flex;
+                flex-direction: row;
+                gap: 12px;
+                align-items: center;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #FFFFFF33;
+                    background: #FFFFFF1A;
+                    color: white;
+                    border-radius: 12px;
+                    backdrop-filter: blur(15px);
+                    -webkit-backdrop-filter: blur(15px);
+                    -moz-backdrop-filter: blur(15px);
+                    transition: all .2s ease;
+                    will-change: backdrop-filter;
+                    aspect-ratio: 1/1;
+                    min-width: 40px;
+                    z-index: 2;
+                    contain: layout style;
+                    isolation: isolate;
+
+                    i {
+                        font-size: 22px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        border-top: 1px solid #FFFFFF33;
+        padding: 16px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        color: white;
+        opacity: .8;
+
+        @include devices(md) {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &-item {
+            opacity: 0.6;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+
+            @include devices(md) {
+                width: 100%;
+                font-size: 15px;
+            }
+
+
+        }
+
+        a {
+            text-decoration: none;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+            white-space: nowrap;
+            color: white;
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            img {
+                height: 28px;
+            }
+        }
+    }
+}

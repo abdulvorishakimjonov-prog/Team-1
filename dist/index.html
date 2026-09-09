@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Proend">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="./images/favicon.svg" type="image/svg">
+<link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+<link rel="stylesheet" href="./assets/icomoon/style.css">
+<link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="./assets/libs/aos/aos.css">
+<link rel="stylesheet" href="./assets/libs/flatpickr/flatpickr.css">
+<link rel="stylesheet" href="./assets/libs/owl-carousel/owl-carousel.css">
+<link rel="stylesheet" href="./assets/libs/owl-carousel/owl-theme.css">
+<link rel="stylesheet" href="./css/main.min.css">
+<title>TITLE</title>
+</head>
+
+<body>
+    <header class="header index" data-aos="fade-down">
+    <div class="container header-container">
+        <div class="button header-button">
+            <i class="i-menu"></i>
+        </div>
+        <div class="vl"></div>
+
+        <div class="header-menu">
+            <div class="header-menu-item header-menu-item--dropdown">
+                <a class="header-menu-link">
+                    <span class="body7">About Us</span>
+                    <i class="i-dropdown"></i>
+                </a>
+                <div class="header-menu-submenu">
+                    <div class="header-menu-submenu-item">
+                        <a href="about.html" class="header-menu-submenu-link body3">
+                            Mision & Vision
+                        </a>
+                    </div>
+                    <div class="header-menu-submenu-item">
+                        <a href="news.html" class="header-menu-submenu-link body3">
+                            News2
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu-item header-menu-item--dropdown">
+                <a class="header-menu-link">
+                    <span class="body7">Programs</span>
+                    <i class="i-dropdown"></i>
+                </a>
+                <div class="header-menu-submenu">
+                    <div class="header-menu-submenu-item">
+                        <a href="./foundation.html" class="header-menu-submenu-link body3">
+                            Foundation
+                        </a>
+                    </div>
+                    <div class="header-menu-submenu-item">
+                        <a href="news.html" class="header-menu-submenu-link body3">
+                            Undergraduate
+                        </a>
+                    </div>
+                    <div class="header-menu-submenu-item">
+                        <a href="news.html" class="header-menu-submenu-link body3">
+                            MAB
+                        </a>
+                    </div>
+                    <div class="header-menu-submenu-item">
+                        <a href="news.html" class="header-menu-submenu-link body3">
+                            Executive
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu-item header-menu-item--dropdown">
+                <a class="header-menu-link">
+                    <span class="body7">Admissions</span>
+                    <i class="i-dropdown"></i>
+                </a>
+                <div class="header-menu-submenu">
+                    <div class="header-menu-submenu-item">
+                        <a href="./admission.html" class="header-menu-submenu-link body3">
+                            Admissions
+                        </a>
+                    </div>
+                    <div class="header-menu-submenu-item">
+                        <a href="./tuition.html" class="header-menu-submenu-link body3">
+                            Tuition fees
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <a href="/" class="header-logo" aria-label="Home">
+            <img src="./images/logo.svg" alt="Logo" class="header-logo-img" />
+        </a>
+        <div class="divider"></div>
+        <div class="header-menu">
+            <div class="header-menu-item header-menu-item--dropdown">
+                <a class="header-menu-link">
+                    <span class="body7">Faculties</span>
+                    <i class="i-dropdown"></i>
+                </a>
+                <div class="header-menu-submenu">
+                    <div class="header-menu-submenu-item">
+                        <a href="news.html" class="header-menu-submenu-link body3">
+                            News1
+                        </a>
+                    </div>
+                    <div class="header-menu-submenu-item">
+                        <a href="news.html" class="header-menu-submenu-link body3">
+                            News2
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu-item header-menu-item--dropdown">
+                <a class="header-menu-link">
+                    <span class="body7">News & Events</span>
+                    <i class="i-dropdown"></i>
+                </a>
+                <div class="header-menu-submenu">
+                    <div class="header-menu-submenu-item">
+                        <a href="news.html" class="header-menu-submenu-link body3">
+                            News1
+                        </a>
+                    </div>
+                    <div class="header-menu-submenu-item">
+                        <a href="news.html" class="header-menu-submenu-link body3">
+                            News2
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu-item ">
+                <a href="contacts.html" class="header-menu-link body3">
+                    Contact us
+                </a>
+            </div>
+        </div>
+        <div class="vl"></div>
+        <div class="button header-button">
+            <i class="i-search"></i>
+        </div>
+    </div>
+</header>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menyu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="menu">
+            <li class="menu-item menu-item--dropdown">
+                <span class="menu-link" data-bs-toggle="collapse" data-bs-target="#submenu1" aria-expanded="false" aria-controls="submenu1">
+                    O Bien
+                    <i class="i-dropdown"></i>
+                </span>
+                <ul class="submenu collapse" id="submenu1">
+                    <li class="submenu-item">
+                        <a href="about.html" class="submenu-link">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="results.html" class="submenu-link">
+                            Результаты
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="team.html" class="submenu-link">
+                            Эксперты Bien
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="news.html" class="submenu-link">
+                            Новости
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item--dropdown">
+                <span class="menu-link" data-bs-toggle="collapse" data-bs-target="#submenu2" aria-expanded="false" aria-controls="submenu2">
+                    Услуги
+                    <i class="i-dropdown"></i>
+                </span>
+                <ul class="submenu collapse" id="submenu2">
+                    <li class="submenu-item">
+                        <a href="service-1.html" class="submenu-link">
+                            Поступление в вузы США
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="service-2.html" class="submenu-link">
+                            Поступление на магистратуру и аспирантуру
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item--dropdown">
+                <span class="menu-link" data-bs-toggle="collapse" data-bs-target="#submenu3" aria-expanded="false" aria-controls="submenu3">
+                    Полезные материалы
+                    <i class="i-dropdown"></i>
+                </span>
+                <ul class="submenu collapse" id="submenu3">
+                    <li class="submenu-item">
+                        <a href="materials.html" class="submenu-link">
+                            Материалы
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="exam.html" class="submenu-link">
+                            Пробный SAT
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="events.html" class="menu-link">
+                    Вебинары и мероприятия
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+    <section class="hero">
+    <div class="hero-overlay">
+        <img class="hero-overlay-image" src="./images/hero-bg.png" alt="">
+    </div>
+    <div class="container hero-container">
+        <div class="hero-content">
+            <div class="hero-content-top">
+                <div class="hero-content-top-left" data-aos="fade-right" data-aos-delay="0">
+                    <h1 class="headline1 slate900 text-start">Shape Your Future
+                        at <span class="red700">TEAM</span> University</h1>
+                </div>
+                <div class="hero-content-top-right" data-aos="fade-left" data-aos-delay="150">
+                    <p class="body3 slate600 text-start">An international business university in Tashkent,
+                        empowering leaders through global education,
+                        innovation and practical impact.</p>
+                    <div class="hero-content-top-right-wrapper">
+                        <a href="#" class="button">
+                            Apply now<i class="i-link"></i>
+                        </a>
+                        <a href="#" class="link slate700">
+                            Learn more<i class="i-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-content-bottom" data-aos="fade-in" data-aos-delay="300">
+                <div class="hero-content-bottom-overlay">
+                    <img class="hero-content-bottom-overlay-image" src="./images/hero-img.png" alt="">
+                </div>
+                <div class="hero-content-bottom-wrapper">
+                    <div class="hero-content-bottom-wrapper-left">
+                        <div class="infocard">
+                            <div class="infocard-media">
+                                <img src="./images/hero-icon-1.svg" alt="" class="infocard-image">
+                            </div>
+                            <div class="infocard-content">
+                                <div class="infocard-value">24 580+</div>
+                                <div class="infocard-label">Students</div>
+                            </div>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="infocard">
+                            <div class="infocard-media">
+                                <img src="./images/hero-icon-2.svg" alt="" class="infocard-image">
+                            </div>
+                            <div class="infocard-content">
+                                <div class="infocard-value">16+</div>
+                                <div class="infocard-label">Programs</div>
+                            </div>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="infocard">
+                            <div class="infocard-media">
+                                <img src="./images/hero-icon-3.svg" alt="" class="infocard-image">
+                            </div>
+                            <div class="infocard-content">
+                                <div class="infocard-value">30+</div>
+                                <div class="infocard-label">Partners</div>
+                            </div>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="infocard">
+                            <div class="infocard-media">
+                                <img src="./images/hero-icon-4.svg" alt="" class="infocard-image">
+                            </div>
+                            <div class="infocard-content">
+                                <div class="infocard-value">870+</div>
+                                <div class="infocard-label">Staff</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="hero-content-bottom-wrapper-right">
+                        <div class="infocard">
+                            <div class="infocard-media">
+                                <i class="i-dtour infocard-icon"></i>
+                            </div>
+                            <div class="infocard-content">
+                                <div class="infocard-value">Explore TEAM Campus</div>
+                                <div class="infocard-label">Take a virtual 3D toure</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-social">
+        <div class="hero-lang" data-aos="fade-left">
+            <button class="hero-lang-btn" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="hero-lang-list">
+                <span class="hero-lang-code">EN</span>
+                <span class="hero-lang-name">GLISH</span>
+                <i class="i-dropdown"></i>
+            </button>
+            <ul class="hero-lang-list" id="hero-lang-list">
+                <li class="hero-lang-option active"><a href="#">ENGLISH</a></li>
+                <li class="hero-lang-option"><a href="#">RUSSIAN</a></li>
+                <li class="hero-lang-option"><a href="#">UZBEK</a></li>
+            </ul>
+        </div>
+        <a data-aos="fade-left" data-aos-delay="100" class="hero-social-item" href="#"><i class="i-telegram"></i><span>Telegram</span></a>
+        <a data-aos="fade-left" data-aos-delay="250" class="hero-social-item" href="#"><i class="i-instagram"></i><span>Instagram</span></a>
+        <a data-aos="fade-left" data-aos-delay="400" class="hero-social-item" href="#"><i class="i-facebook"></i><span>Facebook</span></a>
+        <a data-aos="fade-left" data-aos-delay="550" class="hero-social-item" href="#"><i class="i-linkedin"></i><span>Linkedin</span></a>
+    </div>
+</section>
+    <div class="about">
+    <div class="container">
+        <div class=" about-section-container">
+
+            <div class="about-section">
+                <div class="grid _3 ">
+                    <div class="about-section-content">
+                        <div class="section-top start m-0">
+                            <p class="body6 blue900">
+                                ABOUT TEAM UNIVERSITY
+                            </p>
+                            <h4 class="subtitle1">Education that moves <br>
+                                you <span>forward</span></h4>
+                        </div>
+                        <div class="content-text">
+                            <p>
+                                TEAM University is a modern international business university in Tashkent, built to
+                                prepare ambitious people for the changing world of business.
+                            </p>
+                            <p>
+                                Through Bachelor, MBA and Executive Education programs, we connect academic knowledge
+                                with practical experience, global perspectives and real business challenges.
+                            </p>
+                        </div>
+                        <a href="#" class="button">Learn more <i class="i-link"></i></a>
+                    </div>
+                    <div class="about-section-content">
+                        <div>Through Bachelor, MBA and Executive Education programs, we connect academic knowledge with
+                            practical experience, global perspectives and real business challenges.</div>
+                        <a href="./images/about-1.jpg" data-fancybox><img src="./images/about-1.jpg" alt=""></a>
+                    </div>
+                    <div class="about-section-content">
+                        <a href="./images/about-2.jpg" data-fancybox><img src="./images/about-2.jpg" alt=""></a>
+                        <div>Through Bachelor, MBA and Executive Education programs, we connect academic knowledge with
+                            practical experience, global perspectives and real business challenges.</div>
+                    </div>
+                </div>
+                <div class="about-section-carousel owl-carousel owl-theme">
+                    <div class="about-section-carousel-item">
+                        <img src="./images/about-section-bg.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="grid _3 ">
+                    <div class="about-section-item">
+                        <img src="./images/about-img-1.svg" alt="">
+                        <p class="subtitle8">British Quality Education</p>
+                    </div>
+                    <div class="about-section-item">
+                        <img src="./images/about-img-2.svg" alt="">
+                        <p class="subtitle8">Opportunity to Launch own Startups</p>
+                    </div>
+                    <div class="about-section-item">
+                        <img src="./images/about-img-3.svg" alt="">
+                        <p class="subtitle8">Mentoring Programme by Successful Entrepreneurs</p>
+                    </div>
+                    <div class="about-section-item">
+                        <img src="./images/about-img-4.svg" alt="">
+                        <p class="subtitle8">Modern Campus</p>
+                    </div>
+                    <div class="about-section-item">
+                        <img src="./images/about-img-5.svg" alt="">
+                        <p class="subtitle8">Internships in Best Local Companies</p>
+                    </div>
+                    <div class="about-section-item">
+                        <img src="./images/about-img-6.svg" alt="">
+                        <p class="subtitle8">Contemporary Teaching and Learning Methods</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="programs">
+    <div class="container">
+        <div class="programs-section">
+            <div class="section-top center m-0">
+                <p class="body2 blue900">OUR PROGRAMS</p>
+                <h4 class="subtitle1">Where will you go <span>next?</span></h4>
+            </div>
+            <div class="programs-section-wrapper grid _4">
+                <div class="programs-section-card">
+                    <div class="programs-section-card-image">
+                        <img src="./images/programs-img-1.png" alt="">
+                        <div class="programs-section-card-image-icon">
+                            <img src="./images/programs-img-5.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="programs-section-card-content">
+                        <h6 class="subtitle3 blue900">Foundation Course</h6>
+                        <p class="body3 slate600 line-clamp-2 no-toltip">Prepare for university with confidence.</p>
+                        <a href="#" class="link red800">Learn more <i class="i-arrow"></i></a>
+                    </div>
+                </div>
+                <div class="programs-section-card">
+                    <div class="programs-section-card-image">
+                        <img src="./images/programs-img-2.png" alt="">
+                        <div class="programs-section-card-image-icon">
+                            <img src="./images/programs-img-6.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="programs-section-card-content">
+                        <h6 class="subtitle3 blue900">Bachelor</h6>
+                        <p class="body3 slate600 line-clamp-2 no-toltip">Build the knowledge and skills for a successful career in business.</p>
+                        <a href="#" class="link red800">Learn more <i class="i-arrow"></i></a>
+                    </div>
+                </div>
+                <div class="programs-section-card">
+                    <div class="programs-section-card-image">
+                        <img src="./images/programs-img-3.png" alt="">
+                        <div class="programs-section-card-image-icon">
+                            <img src="./images/programs-img-7.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="programs-section-card-content">
+                        <h6 class="subtitle3 blue900">MBA</h6>
+                        <p class="body3 slate600 line-clamp-2 no-toltip">Strengthen your leadership and strategic decision-making skills.</p>
+                        <a href="#" class="link red800">Learn more <i class="i-arrow"></i></a>
+                    </div>
+                </div>
+                <div class="programs-section-card">
+                    <div class="programs-section-card-image">
+                        <img src="./images/programs-img-4.png" alt="">
+                        <div class="programs-section-card-image-icon">
+                            <img src="./images/programs-img-8.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="programs-section-card-content">
+                        <h6 class="subtitle3 blue900">Executive Education</h6>
+                        <p class="body3 slate600 line-clamp-2 no-toltip">Develop practical expertise for today's business challenges.</p>
+                        <a href="#" class="link red800">Learn more <i class="i-arrow"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="news">
+    <div class="container">
+        <div class="news-section">
+            <div class="section-top m-0">
+                <div class="">
+                    <p class="body6 blue900">NEWS</p>
+                    <h4 class="headline5">What’s happening at <span>TEAM</span></h4>
+                </div>
+                <a href="#" class="link red800">See more <i class="i-arrow"></i></a>
+            </div>
+
+            <div class="news-section-wrapper">
+                <div class="news-section-wrapper-item">
+                    <a href="#" class="news-section-wrapper-item-card">
+                        <img src="./images/news-img-1.png" alt="">
+                        <div class="news-section-wrapper-item-card-text">
+                            <h6 class="subtitle5 line-clamp-2 no-tooltip">We took a look behind the scenes at Dodo Pizza:
+                                how the business works from the inside</h6>
+                            <div class="news-section-wrapper-item-card-text-link">
+                                <p class="body3"><i class="i-calendar"></i>22.08.2026</p>
+                                <p class="body3"><i class="i-view"></i>123</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="news-section-wrapper-item-card">
+                        <img src="./images/news-img-1.png" alt="">
+                        <div class="news-section-wrapper-item-card-text">
+                            <h6 class="subtitle5 line-clamp-2 no-tooltip">We took a look behind the scenes at Dodo Pizza:
+                                how the business works from the inside</h6>
+                            <div class="news-section-wrapper-item-card-text-link">
+                                <p class="body3"><i class="i-calendar"></i>22.08.2026</p>
+                                <p class="body3"><i class="i-view"></i>123</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <a href="#" class="news-section-wrapper-content">
+                    <img src="./images/news-1.jpg" alt="">
+                    <div class="news-section-wrapper-content-title">
+                        <h5 class="subtitle2 slate900">Margulan Seissembai visited TEAM University!</h5>
+                        <p class="body3 slate600">Margulan Seissembai is an international level Kazakh businessman, as
+                            well as investor and
+                            public figure</p>
+                        <div class="news-section-wrapper-content-title-link">
+                            <p class="body3 slate800"><i class="i-calendar"></i>22.08.2026</p>
+                            <p class="body3 slate800"><i class="i-view"></i>123</p>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="news-section-wrapper-item">
+                    <a href="#" class="news-section-wrapper-item-card">
+                        <img src="./images/news-img-1.png" alt="">
+                        <div class="news-section-wrapper-item-card-text">
+                            <h6 class="subtitle5 line-clamp-2 no-tooltip">We took a look behind the scenes at Dodo Pizza:
+                                how the business works from the inside</h6>
+                            <div class="news-section-wrapper-item-card-text-link">
+                                <p class="body3"><i class="i-calendar"></i>22.08.2026</p>
+                                <p class="body3"><i class="i-view"></i>123</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="news-section-wrapper-item-card">
+                        <img src="./images/news-img-1.png" alt="">
+                        <div class="news-section-wrapper-item-card-text">
+                            <h6 class="subtitle5 line-clamp-2 no-tooltip ">We took a look behind the scenes at Dodo Pizza:
+                                how the business works from the inside</h6>
+                            <div class="news-section-wrapper-item-card-text-link">
+                                <p class="body3"><i class="i-calendar"></i>22.08.2026</p>
+                                <p class="body3"><i class="i-view"></i>123</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="carousel">
+    <div class="container">
+        <div class="carousel-section">
+            <div class="section-top m-0">
+                <div>
+                    <p class="body6 blue900">Events</p>
+                    <h4>Upcoming <span>events</span></h4>
+                </div>
+                <div class="carousel-section-icon">
+                    <a href="#"><i class="i-prev"></i></a>
+                    <a href="#"><i class="i-next"></i></a>
+                </div>
+            </div>
+
+            <div class="carousel-section-wrapper owl-carousel">
+                <div class="carousel-section-wrapper-card">
+                    <div class="carousel-section-wrapper-card-subtitle">
+                        <h5 class="headline3 blue900">22</h5>
+                        <p class="body8 slate600" s>09.2026</p>
+                        <p class="body10 red700">09:00 -12:00</p>
+                    </div>
+                    <div class="carousel-section-wrapper-card-line"></div>
+                    <div class="carousel-section-wrapper-card-text">
+                        <h5 class="subtitle5 slate800">Discover TEAM University</h5>
+                        <p class="body3 slate600">Meet our community, explore the campus and learn more about our programs and admissions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="footer">
+    <div class="container">
+        <!-- <div class="footer-banner">
+            <div class="footer-banner-text">
+                <div class="section-top start m-0">
+                    <p class="body6 blue900">OUR PARTNERS</p>
+                    <h4><span>Strong</span> partnerships. <br> Greater <span>possibilities</span>.</h4>
+                    <p class="body3 slate600">Our partners help bridge the gap between education and industry, giving
+                        our students and
+                        professionals.</p>
+                </div>
+                <div class="button">
+                    <p>Explore our partners</p>
+                    <i class="i-link"></i>
+                </div>
+            </div>
+            <div class="footer-banner-line"></div>
+
+            <div class="footer-banner-crusel owl-carousel">
+                <div class="footer-banner-carousel owl-carousel owl-theme">
+                    <div class="footer-banner-carousel-item">
+                        <img src="./images/about-section-bg.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="footer-top">
+            <div class="footer-top--item">
+                <div class="footer-top--item-logo">
+                    <img src="./images/logo-white.svg" alt="Logo">
+                </div>
+                <div class="footer-top--item-socials">
+                    <a href="#"><i class="i-telegram"></i></a>
+                    <a href="#"><i class="i-instagram"></i></a>
+                    <a href="#"><i class="i-facebook"></i></a>
+                    <a href="#"><i class="i-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-top--item">
+                <h5 class="subtitle4 gray100 mb-3">Admissions</h5>
+                <a class="body3 gray300 mb-2" href="#">Application Process</a>
+                <a class="body3 gray300 mb-2" href="#">Tuition Fees and Discount Options</a>
+                <a class="body3 gray300 mb-2" href="#">International Students Visa, Travel and Accommodation</a>
+                <a class="body3 gray300 mb-2" href="#">Policies and Procedures</a>
+                <a class="body3 gray300 mb-2" href="#">Scholarships</a>
+            </div>
+
+            <div class="footer-top--item">
+                <h5 class="subtitle4 gray100 mb-3">About</h5>
+                <a class="body3 gray300 mb-2" href="#">Vision, Mission and Values</a>
+                <a class="body3 gray300 mb-2" href="#">Research</a>
+                <a class="body3 gray300 mb-2" href="#">Legal Framework</a>
+                <a class="body3 gray300 mb-2" href="#">Why TEAM?</a>
+                <a class="body3 gray300 mb-2" href="#">Our People</a>
+                <a class="body3 gray300 mb-2" href="#">LSBU Partnership</a>
+                <a class="body3 gray300 mb-2" href="#">Media About Us</a>
+            </div>
+
+            <div class="footer-top--item">
+                <h5 class="subtitle4 gray100 mb-3">Quick Links</h5>
+                <a class="body3 gray300 mb-2" href="#">Programs</a>
+                <a class="body3 gray300 mb-2" href="#">Admissions</a>
+                <a class="body3 gray300 mb-2" href="#">About</a>
+                <a class="body3 gray300 mb-2" href="#">Scholarships</a>
+                <a class="body3 gray300 mb-2" href="#">LSBU Partnership</a>
+            </div>
+
+            <div class="footer-top--item">
+                <h5 class="subtitle4 gray100 mb-3">Contact</h5>
+                <a class="body3 gray300 mb-2" href="#">
+                    <i class="i-location"></i>Tashkent, Temur Malik Street, 146.
+                </a>
+                <a class="body3 gray300 mb-2" href="#">
+                    <i class="i-phone"></i>+998 71 200 20 60
+                </a>
+                <a class="body3 gray300 mb-2" href="#">
+                    <i class="i-email"></i>info@teamuni.uz
+                </a>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-bottom-item body3 ">Copyright © <span id="y"></span>, Team University</p>
+            <script>y.textContent = new Date().getFullYear()</script>
+            <a href="https://proend.ru" target="_blank" class="footer-bottom-item body3">
+                Sayt ishlab chiquvchisi:
+                <img src="./images/proend.svg" width="100" alt="">
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="./assets/libs/aos/aos.js"></script>
+<script src="./assets/libs/bootstrap/bootstrap.js"></script>
+<script src="./assets/libs/flatpickr/flatpickr.js"></script>
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/imask.js"></script>
+<script src="./assets/libs/owl-carousel/owl-carousel.js"></script>
+<script src="./assets/js/main.js"></script>
+<script>
+    $(function () {
+        if ($('.example-carousel').length) {
+            $('.example-carousel').owlCarousel({
+                loop: true,
+                autoplay: true,
+                nav: false,
+                dots: false,
+                center: true,
+                margin: 16,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    360: {
+                        items: 2
+                    }
+                }
+            });
+        }
+
+        if ($('.about-section-carousel').length) {
+            $('.about-section-carousel').owlCarousel({
+                loop: true,
+                autoplay: false,
+                nav: false,
+                dots: false,
+                center: true,
+                margin: 24,
+                autoWidth: true,
+                items: 8
+            });
+        }
+    });
+
+    $(document).ready(function () {
+        const owl = $('.events-carousel');
+
+        owl.owlCarousel({
+            loop: false,
+            margin: 20,
+            nav: false,
+            dots: false,
+            smartSpeed: 600,
+
+            responsive: {
+                0: {
+                    items: 1.2
+                },
+
+                600: {
+                    items: 2.2
+                },
+
+                1000: {
+                    items: 3.2
+                }
+            }
+        });
+
+        $('.custom-next').on('click', function (e) {
+            e.preventDefault();
+
+            owl.trigger('next.owl.carousel');
+        });
+
+        $('.custom-prev').on('click', function (e) {
+            e.preventDefault();
+
+            owl.trigger('prev.owl.carousel');
+        });
+    });
+
+
+
+    const eventsCarousel = $('.carousel-section-wrapper');
+
+    eventsCarousel.owlCarousel({
+        loop: true,
+        margin: 20,
+        dots: false,
+        nav: false,
+        autoplay: false,
+        smartSpeed: 700,
+        fluidSpeed: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+
+            768: {
+                items: 2
+            },
+
+            1200: {
+                items: 3
+            }
+        }
+    });
+
+    $('.carousel-section-icon .i-prev').parent().on('click', function (e) {
+        e.preventDefault();
+
+        eventsCarousel.trigger('prev.owl.carousel', [700]);
+    });
+
+    $('.carousel-section-icon .i-next').parent().on('click', function (e) {
+        e.preventDefault();
+
+        eventsCarousel.trigger('next.owl.carousel', [700]);
+    });
+</script>
+    <script>
+        (() => {
+            const header = document.querySelector('.header')
+            const threshold = 30
+            let ticking = false
+            let lastTop = null
+
+            const update = () => {
+                const isTop = window.scrollY <= threshold
+                if (isTop === lastTop) return
+                lastTop = isTop
+                header.classList.toggle('index', isTop)
+            }
+
+            update()
+
+            window.addEventListener('scroll', () => {
+                if (ticking) return
+                ticking = true
+                requestAnimationFrame(() => {
+                    update()
+                    ticking = false
+                })
+            }, { passive: true })
+        })()
+    </script>
+
+
+</body>
+
+</html>
