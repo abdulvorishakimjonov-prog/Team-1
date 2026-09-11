@@ -549,37 +549,117 @@
     <div class="carousel">
     <div class="container">
         <div class="carousel-section">
+
             <div class="section-top m-0">
                 <div>
                     <p class="body6 blue900">Events</p>
                     <h4>Upcoming <span>events</span></h4>
                 </div>
+
                 <div class="carousel-section-icon">
-                    <a href="#"><i class="i-prev"></i></a>
-                    <a href="#"><i class="i-next"></i></a>
+                    <a href="#" class="carousel-prev">
+                        <i class="i-prev"></i>
+                    </a>
+
+                    <a href="#" class="carousel-next">
+                        <i class="i-next"></i>
+                    </a>
                 </div>
             </div>
 
             <div class="carousel-section-wrapper owl-carousel">
+
                 <div class="carousel-section-wrapper-card">
                     <div class="carousel-section-wrapper-card-subtitle">
                         <h5 class="headline3 blue900">22</h5>
-                        <p class="body8 slate600" s>09.2026</p>
-                        <p class="body10 red700">09:00 -12:00</p>
+                        <p class="body8 slate600">09.2026</p>
+                        <p class="body10 red700">09:00 - 12:00</p>
                     </div>
+
                     <div class="carousel-section-wrapper-card-line"></div>
+
                     <div class="carousel-section-wrapper-card-text">
-                        <h5 class="subtitle5 slate800">Discover TEAM University</h5>
-                        <p class="body3 slate600">Meet our community, explore the campus and learn more about our programs and admissions.</p>
+                        <h5 class="subtitle5 slate800">
+                            Discover TEAM University
+                        </h5>
+
+                        <p class="body3 slate600 line-clamp-3 no-tooltip">
+                            Meet our community, explore the campus and learn more
+                            about our programs and admissions.
+                        </p>
                     </div>
                 </div>
+
+                <div class="carousel-section-wrapper-card">
+                    <div class="carousel-section-wrapper-card-subtitle">
+                        <h5 class="headline3 blue900">23</h5>
+                        <p class="body8 slate600">10.2026</p>
+                        <p class="body10 red700">14:00 - 17:00</p>
+                    </div>
+
+                    <div class="carousel-section-wrapper-card-line"></div>
+
+                    <div class="carousel-section-wrapper-card-text">
+                        <h5 class="subtitle5 slate800">
+                            Career Fair 2026
+                        </h5>
+
+                        <p class="body3 slate600 line-clamp-3 no-tooltip">
+                            Connect with top employers and find internship and
+                            job opportunities tailored for students.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel-section-wrapper-card">
+                    <div class="carousel-section-wrapper-card-subtitle">
+                        <h5 class="headline3 blue900">24</h5>
+                        <p class="body8 slate600">11.2026</p>
+                        <p class="body10 red700">10:00 - 13:00</p>
+                    </div>
+
+                    <div class="carousel-section-wrapper-card-line"></div>
+
+                    <div class="carousel-section-wrapper-card-text">
+                        <h5 class="subtitle5 slate800">
+                            International Student Workshop
+                        </h5>
+
+                        <p class="body3 slate600 line-clamp-3 no-tooltip">
+                            Get guidance on visas, accommodation, and cultural
+                            adaptation to make your study abroad experience easier.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel-section-wrapper-card">
+                    <div class="carousel-section-wrapper-card-subtitle">
+                        <h5 class="headline3 blue900">25</h5>
+                        <p class="body8 slate600">12.2026</p>
+                        <p class="body10 red700">09:30 - 11:30</p>
+                    </div>
+
+                    <div class="carousel-section-wrapper-card-line"></div>
+
+                    <div class="carousel-section-wrapper-card-text">
+                        <h5 class="subtitle5 slate800">
+                            Winter Art Exhibition
+                        </h5>
+
+                        <p class="body3 slate600 line-clamp-3 no-tooltip">
+                            Explore creative projects and meet students,
+                            faculty and talented artists.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 </div>
     <footer class="footer">
     <div class="container">
-        <!-- <div class="footer-banner">
+        <div class="footer-banner">
             <div class="footer-banner-text">
                 <div class="section-top start m-0">
                     <p class="body6 blue900">OUR PARTNERS</p>
@@ -598,11 +678,11 @@
             <div class="footer-banner-crusel owl-carousel">
                 <div class="footer-banner-carousel owl-carousel owl-theme">
                     <div class="footer-banner-carousel-item">
-                        <img src="./images/about-section-bg.svg" alt="">
+                        <img src="./images/network-img-1.svg" alt="">
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <div class="footer-top">
             <div class="footer-top--item">
@@ -756,37 +836,55 @@
 
     eventsCarousel.owlCarousel({
         loop: true,
-        margin: 20,
-        dots: false,
+        margin: 12,
         nav: false,
-        autoplay: false,
-        smartSpeed: 700,
-        fluidSpeed: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 600,
+        autoplaySpeed: 800,
+        autoplayHoverPause: true,
+        smartSpeed: 800,
+        autoWidth: true,
+        mouseDrag: true,
+        touchDrag: true,
+
         responsive: {
             0: {
+                autoWidth: false,
                 items: 1
             },
 
-            768: {
-                items: 2
-            },
-
-            1200: {
-                items: 3
+            576: {
+                autoWidth: true,
+                items: 1
             }
         }
     });
 
-    $('.carousel-section-icon .i-prev').parent().on('click', function (e) {
+
+    $('.carousel-prev').on('click', function (e) {
         e.preventDefault();
 
-        eventsCarousel.trigger('prev.owl.carousel', [700]);
+        eventsCarousel.trigger('stop.owl.autoplay');
+
+        eventsCarousel.trigger('prev.owl.carousel', [800]);
+
+        setTimeout(function () {
+            eventsCarousel.trigger('play.owl.autoplay', [600]);
+        }, 1000);
     });
 
-    $('.carousel-section-icon .i-next').parent().on('click', function (e) {
+
+    $('.carousel-next').on('click', function (e) {
         e.preventDefault();
 
-        eventsCarousel.trigger('next.owl.carousel', [700]);
+        eventsCarousel.trigger('stop.owl.autoplay');
+
+        eventsCarousel.trigger('next.owl.carousel', [600]);
+
+        setTimeout(function () {
+            eventsCarousel.trigger('play.owl.autoplay', [600]);
+        }, 1000);
     });
 </script>
     <script>

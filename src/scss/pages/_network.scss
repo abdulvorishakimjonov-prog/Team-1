@@ -116,20 +116,7 @@
         }
 
         &-cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 21px;
-
-            @include devices(md) {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 16px;
-            }
-
-            @include devices(sm) {
-                grid-template-columns: 1fr;
-                gap: 12px;
-            }
-
+        
             &-item {
                 background: #FFFFFF;
                 padding: 14px 14px 20px;

@@ -6,19 +6,6 @@
     &-page {
 
         &-main {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-
-            @include devices(lg) {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 16px;
-            }
-
-            @include devices(sm) {
-                grid-template-columns: 1fr;
-                gap: 12px;
-            }
 
             &-item {
                 background: #FFFFFF;

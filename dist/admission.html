@@ -454,7 +454,7 @@
 
     <footer class="footer">
     <div class="container">
-        <!-- <div class="footer-banner">
+        <div class="footer-banner">
             <div class="footer-banner-text">
                 <div class="section-top start m-0">
                     <p class="body6 blue900">OUR PARTNERS</p>
@@ -473,11 +473,11 @@
             <div class="footer-banner-crusel owl-carousel">
                 <div class="footer-banner-carousel owl-carousel owl-theme">
                     <div class="footer-banner-carousel-item">
-                        <img src="./images/about-section-bg.svg" alt="">
+                        <img src="./images/network-img-1.svg" alt="">
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <div class="footer-top">
             <div class="footer-top--item">
@@ -631,37 +631,55 @@
 
     eventsCarousel.owlCarousel({
         loop: true,
-        margin: 20,
-        dots: false,
+        margin: 12,
         nav: false,
-        autoplay: false,
-        smartSpeed: 700,
-        fluidSpeed: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 600,
+        autoplaySpeed: 800,
+        autoplayHoverPause: true,
+        smartSpeed: 800,
+        autoWidth: true,
+        mouseDrag: true,
+        touchDrag: true,
+
         responsive: {
             0: {
+                autoWidth: false,
                 items: 1
             },
 
-            768: {
-                items: 2
-            },
-
-            1200: {
-                items: 3
+            576: {
+                autoWidth: true,
+                items: 1
             }
         }
     });
 
-    $('.carousel-section-icon .i-prev').parent().on('click', function (e) {
+
+    $('.carousel-prev').on('click', function (e) {
         e.preventDefault();
 
-        eventsCarousel.trigger('prev.owl.carousel', [700]);
+        eventsCarousel.trigger('stop.owl.autoplay');
+
+        eventsCarousel.trigger('prev.owl.carousel', [800]);
+
+        setTimeout(function () {
+            eventsCarousel.trigger('play.owl.autoplay', [600]);
+        }, 1000);
     });
 
-    $('.carousel-section-icon .i-next').parent().on('click', function (e) {
+
+    $('.carousel-next').on('click', function (e) {
         e.preventDefault();
 
-        eventsCarousel.trigger('next.owl.carousel', [700]);
+        eventsCarousel.trigger('stop.owl.autoplay');
+
+        eventsCarousel.trigger('next.owl.carousel', [600]);
+
+        setTimeout(function () {
+            eventsCarousel.trigger('play.owl.autoplay', [600]);
+        }, 1000);
     });
 </script>
 

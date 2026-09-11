@@ -1,13 +1,28 @@
 @use '../config/mixins' as *;
 
-
 .programs {
 
     &-section {
         margin-bottom: 75px;
 
+        @include devices(md) {
+            margin-bottom: 50px;
+        }
+
+        @include devices(sm) {
+            margin-bottom: 40px;
+        }
+
         &-wrapper {
             margin-top: 32px;
+
+            @include devices(md) {
+                margin-top: 24px;
+            }
+
+            @include devices(sm) {
+                margin-top: 20px;
+            }
         }
 
         &-card {
@@ -18,6 +33,21 @@
             width: 100%;
             height: 100%;
 
+            @include devices(lg) {
+                max-width: 100%;
+                min-height: 350px;
+            }
+
+            @include devices(md) {
+                border-radius: 20px;
+                min-height: 330px;
+            }
+
+            @include devices(sm) {
+                border-radius: 16px;
+                min-height: auto;
+            }
+
             &-image {
                 position: relative;
 
@@ -27,11 +57,25 @@
                 max-height: 210px;
                 border-radius: 24px 24px 0 0;
 
+                @include devices(lg) {
+                    max-width: 100%;
+                    max-height: 200px;
+                }
+
+                @include devices(md) {
+                    max-height: 190px;
+                }
+
+                @include devices(sm) {
+                    max-height: 180px;
+                }
+
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     border-radius: 24px 24px 0 0;
+
                 }
 
                 &-icon {
@@ -45,6 +89,24 @@
                     width: 54px;
                     height: 54px;
                     border-radius: 16px;
+
+                    @include devices(md) {
+                        top: 16px;
+                        left: 16px;
+                        width: 48px;
+                        height: 48px;
+                        padding: 9px;
+                        border-radius: 14px;
+                    }
+
+                    @include devices(sm) {
+                        top: 12px;
+                        left: 12px;
+                        width: 42px;
+                        height: 42px;
+                        padding: 8px;
+                        border-radius: 12px;
+                    }
 
                     img {
                         width: 100%;
@@ -60,12 +122,32 @@
                 display: flex;
                 flex-direction: column;
 
+                @include devices(md) {
+                    padding: 0 16px 16px;
+                }
+
+                @include devices(sm) {
+                    padding: 0 12px 14px;
+                }
+
                 h6 {
                     margin-bottom: 8px;
+
+                    @include devices(sm) {
+                        margin-bottom: 6px;
+                    }
                 }
 
                 p {
                     margin-bottom: 46px;
+
+                    @include devices(md) {
+                        margin-bottom: 30px;
+                    }
+
+                    @include devices(sm) {
+                        margin-bottom: 20px;
+                    }
                 }
             }
         }

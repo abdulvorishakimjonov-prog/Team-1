@@ -3,11 +3,36 @@
 .foundation {
     margin-bottom: 385px;
 
+    @include devices(lg) {
+        margin-bottom: 220px;
+    }
+
+
+    @include devices(sm) {
+        margin-bottom: 100px;
+    }
+
+    @include devices(xs) {
+        margin-bottom: 70px;
+    }
+
+
     &-content {
         background: #FFFFFF;
         border-radius: 32px;
         padding: 24px 16px;
         margin-bottom: 20px;
+
+        @include devices(md) {
+            border-radius: 24px;
+            padding: 20px 16px;
+        }
+
+        @include devices(sm) {
+            border-radius: 20px;
+            padding: 18px 14px;
+            margin-bottom: 16px;
+        }
 
         &-title {
             display: flex;
@@ -15,16 +40,40 @@
             gap: 8px;
             margin-bottom: 24px;
 
+            @include devices(md) {
+                margin-bottom: 20px;
+            }
+
+            @include devices(sm) {
+                margin-bottom: 16px;
+            }
+
             blockquote {
                 margin-bottom: 15px;
+
+                @include devices(sm) {
+                    margin-bottom: 10px;
+                }
             }
         }
+
 
         &-link {
             display: flex;
             align-items: center;
             gap: 24px;
             margin-bottom: 16px;
+
+            @include devices(md) {
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+
+            @include devices(sm) {
+                gap: 8px;
+                margin-bottom: 12px;
+            }
+
 
             &-item {
                 display: flex;
@@ -34,18 +83,39 @@
                 border-radius: 64px;
                 padding: 13px 16px;
 
+                @include devices(md) {
+                    padding: 11px 14px;
+                }
+
                 img {
                     width: 20px;
                     height: 20px;
+
+                    @include devices(sm) {
+                        width: 18px;
+                        height: 18px;
+                    }
+
                 }
             }
         }
     }
 
+
     &-info {
         background: #FFFFFF;
         border-radius: 32px;
         margin-bottom: 20px;
+
+        @include devices(md) {
+            border-radius: 24px;
+            margin-bottom: 16px;
+        }
+
+        @include devices(sm) {
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
 
         &-title {
             padding: 24px 24px 0;
@@ -53,12 +123,25 @@
             flex-direction: column;
             gap: 4px;
             margin-bottom: 32px;
+
+            @include devices(md) {
+                padding: 20px 20px 0;
+                margin-bottom: 24px;
+            }
+
+            @include devices(sm) {
+                padding: 18px 16px 0;
+                margin-bottom: 20px;
+            }
+
         }
+
 
         &-wrapper {
             display: flex;
             flex-direction: column;
             gap: 0;
+
 
             &-item {
                 display: flex;
@@ -67,12 +150,37 @@
                 padding: 20px 24px;
                 border-top: 1px solid #E2E8F0;
 
+                @include devices(lg) {
+                    gap: 40px;
+                }
+
+                @include devices(md) {
+                    gap: 24px;
+                    padding: 18px 20px;
+                }
+
                 &-image {
                     width: 52px;
                     height: 52px;
                     border-radius: 16px;
                     padding: 10px;
                     background: #F1F5F9;
+                    flex-shrink: 0;
+
+                    @include devices(sm) {
+                        width: 44px;
+                        height: 44px;
+                        padding: 8px;
+                        border-radius: 12px;
+                    }
+
+                    @include devices(xs) {
+                        width: 40px;
+                        height: 40px;
+                        padding: 7px;
+                        border-radius: 10px;
+                    }
+
 
                     img {
                         width: 100%;
@@ -84,6 +192,7 @@
         }
     }
 
+
     &-subtitle {
         background: #FFFFFF;
         border-radius: 32px;
@@ -93,14 +202,31 @@
         flex-direction: column;
         gap: 12px;
 
+        @include devices(md) {
+            border-radius: 24px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        @include devices(sm) {
+            border-radius: 20px;
+            padding: 18px 16px;
+            margin-bottom: 12px;
+        }
+
+
         &-text {
             display: flex;
             flex-direction: column;
             gap: 16px;
 
+            @include devices(sm) {
+                gap: 12px;
+            }
+
             p {
                 display: flex;
-                align-items: 2;
+                align-items: center;
                 gap: 6px;
                 color: #0F172A;
 
@@ -110,11 +236,18 @@
                     border-radius: 16px;
                     background: #FFFFFF;
                     border: 3px solid #1C398E;
+                    flex-shrink: 0;
 
+                    @include devices(sm) {
+                        width: 12px;
+                        height: 12px;
+                        border-width: 2px;
+                    }
                 }
             }
         }
     }
+
 
     &-exam {
         background: #FFFFFF;
@@ -122,17 +255,54 @@
         padding: 24px;
         margin-bottom: 20px;
 
+        @include devices(md) {
+            border-radius: 24px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        @include devices(sm) {
+            border-radius: 20px;
+            padding: 18px 16px;
+            margin-bottom: 12px;
+        }
 
         &-wrapper {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
             margin-top: 20px;
+
+            @include devices(lg) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            @include devices(md) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 14px;
+                margin-top: 16px;
+            }
+
+            @include devices(sm) {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                margin-top: 14px;
+            }
+
 
             &-card {
                 background: var(--slate-100, #F1F5F9);
                 border-radius: 24px;
                 padding: 6px 16px 16px;
+
+                @include devices(md) {
+                    border-radius: 20px;
+                    padding: 6px 14px 14px;
+                }
+
+                @include devices(sm) {
+                    border-radius: 16px;
+                    padding: 6px 12px 12px;
+                }
+
 
                 &-title {
                     display: flex;
@@ -145,12 +315,19 @@
                         border-radius: 16px;
                         padding: 10px;
 
+                        @include devices(sm) {
+                            border-radius: 12px;
+                            padding: 8px;
+                        }
+
+
                         img {
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
                         }
                     }
+
 
                     h2 {
                         background: linear-gradient(180deg,
@@ -160,11 +337,20 @@
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                         background-clip: text;
+
+                        @include devices(sm) {
+                            font-size: 28px;
+                        }
+
+                        @include devices(xs) {
+                            font-size: 24px;
+                        }
                     }
                 }
             }
         }
     }
+
 
     &-main {
         background: #FFFFFF;
@@ -175,14 +361,43 @@
         background-position: center right;
         margin-bottom: 20px;
 
+        @include devices(lg) {
+            background-size: 45%;
+        }
+
+        @include devices(md) {
+            border-radius: 24px;
+            padding: 20px;
+            margin-bottom: 16px;
+            background-size: 40%;
+        }
+
+        @include devices(sm) {
+            border-radius: 20px;
+            padding: 18px 16px;
+            margin-bottom: 12px;
+            background-image: none;
+        }
+
         &-title {
             max-width: 650px;
             margin-bottom: 24px;
             display: flex;
             flex-direction: column;
             gap: 8px;
+
+            @include devices(md) {
+                max-width: 60%;
+                margin-bottom: 20px;
+            }
+
+            @include devices(sm) {
+                max-width: 100%;
+                margin-bottom: 16px;
+            }
         }
     }
+
 
     &-faq {
         background: #FFFFFF;
@@ -190,24 +405,64 @@
         padding: 24px;
         margin-bottom: 20px;
 
+        @include devices(md) {
+            border-radius: 24px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        @include devices(sm) {
+            border-radius: 20px;
+            padding: 18px 16px;
+            margin-bottom: 12px;
+        }
+
         &-title {
             display: flex;
             flex-direction: column;
             gap: 4px;
             margin-bottom: 16px;
+
+            @include devices(sm) {
+                margin-bottom: 12px;
+            }
         }
     }
+
 
     &-course {
         position: relative;
         height: 355px;
+
+        @include devices(lg) {
+            height: 320px;
+        }
+
+        @include devices(md) {
+            height: 300px;
+        }
 
         img {
             width: 100%;
             height: 510px;
             object-fit: cover;
             border-radius: 32px;
+
+            @include devices(lg) {
+                height: 460px;
+            }
+
+            @include devices(md) {
+                height: 420px;
+                border-radius: 24px;
+            }
+
+            @include devices(sm) {
+                height: 340px;
+                border-radius: 20px;
+            }
         }
+
 
         &-content {
             position: absolute;
@@ -222,6 +477,42 @@
             gap: 8px;
             border-radius: 24px;
             z-index: 2;
+
+            @include devices(lg) {
+                width: 55%;
+                height: 480px;
+                padding: 20px;
+            }
+
+            @include devices(md) {
+                width: 60%;
+                height: 440px;
+                top: 20px;
+                left: 20px;
+                padding: 20px;
+                border-radius: 20px;
+            }
+
+            @include devices(sm) {
+                position: relative;
+                top: auto;
+                left: auto;
+
+                width: 100%;
+                height: auto;
+                min-height: 280px;
+
+                margin-top: -40px;
+                padding: 18px 16px;
+
+                border-radius: 18px;
+            }
+
+            @include devices(xs) {
+                margin-top: -30px;
+                padding: 16px 12px;
+                border-radius: 16px;
+            }
         }
     }
 }
