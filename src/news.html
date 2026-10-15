@@ -2,83 +2,219 @@
 <html>
 
 <head>
-    @@include('components/layout/head.html')
+  @@include('components/layout/head.html')
 </head>
 
 <body>
-    @@include('components/layout/header.html')
-    @@include('components/layout/menu.html')
-    @@include('components/layout/breadcrumb.html')
-    <div class="layout">
-        <div class="container">
-            <div class="layout-content">
-                <div class="news-page">
-                    <div class="grid _4">
-                        <a href="@/news-view.html" class="news-page-card">
-                            <div class="news-page-card-image">
-                                <img src="@/images/news-img-2.png" alt="">
-                            </div>
-                            <div class="news-page-card-title">
-                                <h5 class="line-clamp-2 no-tooltip subtitle5 slate900">Guest lecture with Marianna
-                                    Semenova! Head of HR at UzCard</h5>
-                                <div class="news-page-card-title-link">
-                                    <p class="body3"><i class="i-calendar"></i>22.08.2026</p>
-                                    <p class="body3"><i class="i-view"></i>220</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="@/news-view.html" class="news-page-card">
-                            <div class="news-page-card-image">
-                                <img src="@/images/news-img-2.png" alt="">
-                            </div>
-                            <div class="news-page-card-title">
-                                <h5 class="line-clamp-2 no-tooltip subtitle5 slate900">Guest lecture with Marianna
-                                    Semenova! Head of HR at UzCard</h5>
-                                <div class="news-page-card-title-link">
-                                    <p class="body3"><i class="i-calendar"></i>22.08.2026</p>
-                                    <p class="body3"><i class="i-view"></i>97</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="@/news-view.html" class="news-page-card">
-                            <div class="news-page-card-image">
-                                <img src="@/images/news-img-2.png" alt="">
-                            </div>
-                            <div class="news-page-card-title">
-                                <h5 class="line-clamp-2 no-tooltip subtitle5 slate900">Workshop on UX Design Principles
-                                    by Alexei Petrov</h5>
-                                <div class="news-page-card-title-link">
-                                    <p class="body3"><i class="i-calendar"></i>22.08.2026</p>
-                                    <p class="body3"><i class="i-view"></i>320</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="@/news-view.html" class="news-page-card">
-                            <div class="news-page-card-image">
-                                <img src="@/images/news-img-1.png" alt="">
-                            </div>
-                            <div class="news-page-card-title">
-                                <h5 class="line-clamp-2 no-tooltip subtitle5 slate900">Panel Discussion: Future of
-                                    Blockchain Technology</h5>
-                                <div class="news-page-card-title-link">
-                                    <p class="body3"><i class="i-calendar"></i>22.08.2026</p>
-                                    <p class="body3"><i class="i-view"></i>10</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+  @@include('components/layout/header.html')
+  @@include('components/layout/menu.html')
+  @@include('components/layout/breadcrumb.html')
+  <div class="layout">
+    <div class="container">
+      <div class="layout-content">
+        <div class="news-page">
+          <div class="news-page-main">
+            <div class="news-page-item">
+              <div class="news-page-item-image">
+                <img src="@/images/news-img-1.png" alt="">
+              </div>
+              <div class="news-page-item-text">
+                <h5 class="subtitle3 slate900">Margulan Seissembai visited TEAM University!</h5>
+                <p class="body3 slate600">Margulan Seissembai is an international level Kazakh businessman, as well as
+                  investor and public
+                  figure</p>
+                <div class="news-page-item-text-link">
+                  <p class="body3 slate800"><i class="i-calendar"></i>22.08.2026</p>
+                  <p class="body3 slate800"><i class="i-view"></i>123</p>
                 </div>
-            </div>
-            <div class="layout-sidebar">
-                @@include('components/layout/sidebar.html')
+              </div>
             </div>
 
+            <div class="grid _2">
+              <div class="news-page-card">
+                <img src="@/images/news-img-2.png" alt="">
+
+                <div class="news-page-card-overlay">
+                  <p class="subtitle5 line-clamp-2">
+                    We took a look behind the scenes at Dodo Pizza: how the business works from the inside
+                  </p>
+                  <div class="news-page-card-info body3">
+                    <span>
+                      <i class="i-calendar"></i>
+                      22.08.2026
+                    </span>
+                    <span>
+                      <i class="i-view"></i>
+                      123
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="news-page-card">
+                <img src="@/images/news-img-2.png" alt="">
+
+                <div class="news-page-card-overlay">
+                  <p class="subtitle5 line-clamp-2">
+                    We took a look behind the scenes at Dodo Pizza: how the business works from the inside
+                  </p>
+                  <div class="news-page-card-info body3">
+                    <span>
+                      <i class="i-calendar"></i>
+                      22.08.2026
+                    </span>
+                    <span>
+                      <i class="i-view"></i>
+                      123
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="news-page-card">
+                <img src="@/images/news-img-2.png" alt="">
+
+                <div class="news-page-card-overlay">
+                  <p class="subtitle5 line-clamp-2">
+                    We took a look behind the scenes at Dodo Pizza: how the business works from the inside
+                  </p>
+                  <div class="news-page-card-info body3">
+                    <span>
+                      <i class="i-calendar"></i>
+                      22.08.2026
+                    </span>
+                    <span>
+                      <i class="i-view"></i>
+                      123
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="news-page-card">
+                <img src="@/images/news-img-2.png" alt="">
+
+                <div class="news-page-card-overlay">
+                  <p class="subtitle5 line-clamp-2">
+                    We took a look behind the scenes at Dodo Pizza: how the business works from the inside
+                  </p>
+                  <div class="news-page-card-info body3">
+                    <span>
+                      <i class="i-calendar"></i>
+                      22.08.2026
+                    </span>
+                    <span>
+                      <i class="i-view"></i>
+                      123
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-page-main">
+            <div class="grid _2">
+              <div class="news-page-card">
+                <img src="@/images/news-img-2.png" alt="">
+
+                <div class="news-page-card-overlay">
+                  <p class="subtitle5 line-clamp-2">
+                    We took a look behind the scenes at Dodo Pizza: how the business works from the inside
+                  </p>
+                  <div class="news-page-card-info body3">
+                    <span>
+                      <i class="i-calendar"></i>
+                      22.08.2026
+                    </span>
+                    <span>
+                      <i class="i-view"></i>
+                      123
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="news-page-card">
+                <img src="@/images/news-img-2.png" alt="">
+
+                <div class="news-page-card-overlay">
+                  <p class="subtitle5 line-clamp-2">
+                    We took a look behind the scenes at Dodo Pizza: how the business works from the inside
+                  </p>
+                  <div class="news-page-card-info body3">
+                    <span>
+                      <i class="i-calendar"></i>
+                      22.08.2026
+                    </span>
+                    <span>
+                      <i class="i-view"></i>
+                      123
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="news-page-card">
+                <img src="@/images/news-img-2.png" alt="">
+
+                <div class="news-page-card-overlay">
+                  <p class="subtitle5 line-clamp-2">
+                    We took a look behind the scenes at Dodo Pizza: how the business works from the inside
+                  </p>
+                  <div class="news-page-card-info body3">
+                    <span>
+                      <i class="i-calendar"></i>
+                      22.08.2026
+                    </span>
+                    <span>
+                      <i class="i-view"></i>
+                      123
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="news-page-card">
+                <img src="@/images/news-img-2.png" alt="">
+
+                <div class="news-page-card-overlay">
+                  <p class="subtitle5 line-clamp-2">
+                    We took a look behind the scenes at Dodo Pizza: how the business works from the inside
+                  </p>
+                  <div class="news-page-card-info body3">
+                    <span>
+                      <i class="i-calendar"></i>
+                      22.08.2026
+                    </span>
+                    <span>
+                      <i class="i-view"></i>
+                      123
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news-page-item">
+              <div class="news-page-item-image">
+                <img src="@/images/news-img-1.png" alt="">
+              </div>
+              <div class="news-page-item-text">
+                <h5 class="subtitle3 slate900">Margulan Seissembai visited TEAM University!</h5>
+                <p class="body3 slate600">Margulan Seissembai is an international level Kazakh businessman, as well as
+                  investor and public
+                  figure</p>
+                <div class="news-page-item-text-link">
+                  <p class="body3 slate800"><i class="i-calendar"></i>22.08.2026</p>
+                  <p class="body3 slate800"><i class="i-view"></i>123</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="layout-sidebar">
+        @@include('components/layout/sidebar.html')
+      </div>
     </div>
+  </div>
 
-  
-    @@include('components/layout/footer.html')
+  @@include('components/layout/footer.html')
 
 </body>
 
-</html>  
+</html>

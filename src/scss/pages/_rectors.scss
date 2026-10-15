@@ -1,0 +1,135 @@
+@use '../config/mixins' as *;
+
+.rectors {
+
+  &-main {
+    display: grid;
+    grid-template-columns: 385px 1fr;
+    gap: 38px;
+    align-items: flex-end;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+
+      &-title {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 14px;
+
+        h6 {
+          margin-bottom: 80px;
+        }
+
+        p {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          span {
+            width: 30px;
+            height: 2px;
+            background: #C10007;
+            border-radius: 26px;
+          }
+        }
+
+        b {
+          max-width: 694px;
+          border-left: 3.5px solid #1C398E;
+          padding: 0 0 0 10px;
+        }
+      }
+    }
+  }
+
+  &-line {
+    width: 100%;
+    height: .5px;
+    margin: 66px 0;
+    background: #E2E8F0;
+  }
+
+  &-content {
+    background: #FFFFFF;
+    border-radius: 32px;
+    margin-top: 72px;
+    padding: 80px 16px 5px;
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-align: center;
+      padding: 0 0 32px;
+      margin: 0 64px 32px;
+      border-bottom: 1px solid #E2E8F0;
+      background-image: url("../../images/rectors-img-4.svg"), url("../../images/rectors-img-5.svg");
+      background-repeat: no-repeat;
+      background-position: left top, bottom right;
+
+      p {
+        max-width: 808px;
+      }
+
+      &-after {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+
+        p {
+          display: flex;
+          align-items: center;
+          margin: 0;
+          text-transform: uppercase;
+          white-space: nowrap;
+          gap: 12px;
+
+          &::before,
+          &::after {
+            content: '';
+            width: 30px;
+            height: 2px;
+          }
+
+          &::before {
+            background: linear-gradient(90deg,
+                rgba(28, 57, 142, 0) 0%,
+                #1C398E 100%);
+          }
+
+          &::after {
+            background: linear-gradient(90deg,
+                #1C398E 0%,
+                rgba(28, 57, 142, 0) 100%);
+          }
+        }
+      }
+    }
+
+    &-users { 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 52px;
+      margin-bottom: 25px;
+
+      &-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        img {
+          width: 63px;
+          height: 60px;
+          object-fit: cover;
+        }
+      }
+    }
+
+  }
+}

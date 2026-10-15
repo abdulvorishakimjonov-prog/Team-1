@@ -1,0 +1,125 @@
+.structure {
+
+  &-main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 25px;
+      width: 2px;
+      background: #E2E8F0;
+      z-index: 0;
+    }
+
+    &-item {
+      position: relative;
+      z-index: 1;
+
+      display: flex;
+
+      &-left {
+        background: linear-gradient(270deg, #9F0712 0%, #C10007 50%);
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        width: 50px;
+        height: 45px;
+        padding: 10px 16px 10px 10px;
+        color: #FFFFFF;
+        margin-top: 30px;
+      }
+
+      &-right {
+        width: 100%;
+        background: #FFFFFF;
+        border-radius: 32px;
+        padding: 20px;
+
+        &-title {
+          display: flex;
+          align-items: start;
+          justify-content: space-between;
+          border-bottom: 1px solid #E2E8F0;
+          padding: 0 0 16px;
+          margin-bottom: 16px;
+
+          h6 {
+            margin-bottom: 4px;
+          }
+        }
+
+        &-forum {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          &-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+
+            &-card {
+              position: relative;
+              overflow: hidden;
+              background: #F5F7F9;
+              border-radius: 16px;
+              padding: 16px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              color: #0F172A;
+              gap: 16px;
+              transition: color .4s ease;
+
+              &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                border-radius: inherit;
+
+                background: radial-gradient(100% 2980.61% at 100% 50%,
+                    #1C398E 0%,
+                    #355BCA 100%);
+
+                opacity: 0;
+                transition: opacity .4s ease;
+
+                z-index: 0;
+              }
+
+              >* {
+                position: relative;
+                z-index: 1;
+              }
+
+              i {
+                font-size: 24px;
+                color: #1C398E;
+                transition: color .4s ease;
+              }
+
+              &:hover {
+                color: #FFFFFF;
+
+                &::before {
+                  opacity: 1;
+                }
+
+                i {
+                  color: #FFFFFF;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

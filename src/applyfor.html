@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  @@include('components/layout/head.html')
+</head>
+
+<body>
+  @@include('components/layout/header.html')
+  @@include('components/layout/menu.html')
+  @@include('components/layout/breadcrumb.html')
+  <div class="layout">
+    <div class="container">
+      <div class="layout-content">
+        <div class="book">
+          <div class="sudents-label">
+            <div class="sudents-label-title">
+              <h5 class="subtitle2 slate900">Apply for the Executive MBA</h5>
+              <p class="body3 slate600">
+                Submit your undergraduate application online.
+              </p>
+            </div>
+
+            <form class="sudents-label-form">
+              <div class="sudents-label-form-section">
+                <h6 class="sudents-label-form-section-title subtitle4 slate900">About you</h6>
+
+                <div class="sudents-label-form-grid">
+                  <div class="sudents-label-form-group">
+                    <label for="full-name">Full name</label>
+                    <input type="text" id="full-name" name="fullName" placeholder="Full name">
+                  </div>
+
+                  <div class="sudents-label-form-group">
+                    <label for="birth-date">Date of birth</label>
+                    <input type="text" id="birth-date" name="birthDate" placeholder="dd-mm-yyyy"
+                      onfocus="this.type='date'" onblur="if(!this.value)this.type='text'">
+                  </div>
+
+                  <div class="sudents-label-form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone number">
+                  </div>
+
+                  <div class="sudents-label-form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                  </div>
+                </div>
+              </div>
+
+              <div class="sudents-label-form-section">
+                <h6 class="sudents-label-form-section-title subtitle4 slate900">Professional background</h6>
+
+                <div class="sudents-label-form-grid">
+                  <div class="sudents-label-form-group">
+                    <label for="city">Company</label>
+                    <input type="text" id="city" name="city" placeholder="Select programme">
+                  </div>
+
+                  <div class="sudents-label-form-group">
+                    <label for="city">Position</label>
+                    <input type="text" id="city" name="city" placeholder="Position">
+                  </div>
+
+                  <div class="sudents-label-form-group">
+                    <label for="city">Years of management experience *</label>
+                    <input type="text" id="city" name="city" placeholder="City">
+                  </div>
+
+                  <div class="sudents-label-form-group">
+                    <label for="source">Bachelor's degree *</label>
+                    <select id="source" name="Select">
+                      <option value="" selected disabled>Select</option>
+                      <option value="social-media">Social media</option>
+                      <option value="friends">Friends or family</option>
+                      <option value="website">University website</option>
+                      <option value="event">University event</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sudents-label-form-section">
+                <h6 class="sudents-label-form-section-title subtitle4 slate900">
+                  Application details
+                </h6>
+
+                <div class="sudents-label-form-grid">
+                  <div class="sudents-label-form-group">
+                    <label for="certificate-score">
+                      Preferred cohort
+                    </label>
+
+                    <select id="certificate-score" name="certificateScore">
+                      <option value="" selected>Select</option>
+                      <option value="ielts-5">IELTS 5.0</option>
+                      <option value="ielts-5.5">IELTS 5.5</option>
+                      <option value="ielts-6">IELTS 6.0</option>
+                      <option value="ielts-6.5">IELTS 6.5</option>
+                      <option value="ielts-7">IELTS 7.0+</option>
+                      <option value="other">Other certificate</option>
+                    </select>
+                  </div>
+
+                  <div class="sudents-label-form-group">
+                    <label for="certificate-score">
+                      How did you hear about us?
+                    </label>
+
+                    <select id="certificate-score" name="certificateScore">
+                      <option value="" selected>Select</option>
+                      <option value="ielts-5">IELTS 5.0</option>
+                      <option value="ielts-5.5">IELTS 5.5</option>
+                      <option value="ielts-6">IELTS 6.0</option>
+                      <option value="ielts-6.5">IELTS 6.5</option>
+                      <option value="ielts-7">IELTS 7.0+</option>
+                      <option value="other">Other certificate</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sudents-label-form-footer">
+                <label class="sudents-label-form-consent">
+                  <input type="checkbox" name="consent" required>
+                  <span class="body3 slate700">Consent to personal data processing</span>
+                </label>
+
+                <button class="sudents-label-form-submit button" type="submit">
+                  Submit application
+                  <i class="i-arrow"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="layout-sidebar">
+        @@include('components/layout/sidebar.html')
+      </div>
+    </div>
+  </div>
+
+  @@include('components/layout/footer.html')
+
+</body>
+
+</html>

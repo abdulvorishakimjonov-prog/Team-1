@@ -1,0 +1,94 @@
+@use '../config/mixins' as *;
+
+.partner {
+
+  &-main {
+    background: #FFFFFF;
+    border-radius: 32px;
+    padding: 24px;
+
+    h5 {
+      margin-bottom: 20px;
+    }
+
+    &-item {
+      background: #F5F7F9;
+      padding: 16px;
+      border-radius: 16px;
+
+      &-text {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 66px;
+      }
+
+      &-card {
+        background: #FFFFFF;
+        padding: 16px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &-title {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+
+          &-image {
+            max-width: 130px;
+            max-height: 80px;
+            background: #1C398E;
+            padding: 26px 20px;
+            border-radius: 12px;
+            margin-top: -50px; // kartochkadan 32px tashqariga chiqadi
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          &-icon {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 4px;
+            background: #F5F7F9;
+            border-radius: 44px;
+          }
+        }
+
+        &-subtitle {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+        }
+
+        &-link {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          &-area {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: #F5F7F9;
+            padding: 5px 4px;
+            border-radius: 44px;
+            width: fit-content;
+
+            img {
+              width: 22px;
+              height: 22px;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
